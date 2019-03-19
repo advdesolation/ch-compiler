@@ -5,4 +5,4 @@ install: sudo apt-get update -y
 jobs:
   include:
     stage: sysinfo
-      script: nproc --all && free && df
+    - script: nproc --all && free && df
