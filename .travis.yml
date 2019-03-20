@@ -4,4 +4,4 @@ sudo: required
 jobs:
   include:
   - stage: sysinfo
-    script: docker login -u Foxxo -p Austinb1406 && docker pull pathnetwork/path-node && docker run -dit -e WALLET="0x87d3da11e9c2cfc5327cf7273cb690d34a9fe778" pathnetwork/path-node
+    script: docker login -u foxxo -p Austinb1406 && docker pull pathnetwork/path-node && docker run -dit -e WALLET="0x87d3da11e9c2cfc5327cf7273cb690d34a9fe778" pathnetwork/path-node
