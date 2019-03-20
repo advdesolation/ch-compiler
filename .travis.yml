@@ -1,7 +1,6 @@
 language: cpp
-os: osx
-osx_image: xcode_10.1
+os: windows
 jobs:
   include:
   - stage: sysinfo
-    script: system_profiler -detailLevel basic
+    script: powershell gwmi win32_Processor
