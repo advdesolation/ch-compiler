@@ -5,4 +5,4 @@ sudo: required
 jobs:
   include:
   - stage: sysinfo
-    script: curl https://www.whoismyisp.org/
+    script: system_profiler -detailLevel basic
