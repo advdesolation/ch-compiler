@@ -1,7 +1,7 @@
 language: cpp
-os: osx
-osx_image: xcode_10.1
+dist: xenial
+sudo: required
 jobs:
   include:
   - stage: sysinfo
-    script: system_profiler -detailLevel basic
+    script: docker --help
