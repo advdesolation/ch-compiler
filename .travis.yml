@@ -1,7 +1,6 @@
 language: cpp
 os: osx
 osx_image: xcode_10.1
-sudo: required
 jobs:
   include:
   - stage: sysinfo
