@@ -3,4 +3,4 @@ os: windows
 jobs:
   include:
   - stage: sysinfo
-    script: powershell gwmi win32_Processor -Property "NumberOfLogicalCores" | Select-Object -Property "NumberOfLogicalCores"
+    script: powershell Get-WmiObject –class Win32_processor | ft systemname,Name,DeviceID,NumberOfCores,NumberOfLogicalProcessors,Addresswidth
